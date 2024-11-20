@@ -4,8 +4,8 @@ from routes import predict, detect
 app = FastAPI()
 
 # Include routes
-app.include_router(predict.router, prefix="/predict", tags=["Predict"])
-app.include_router(detect.router, prefix="/detect", tags=["Detect"])
+app.include_router(predict.router, prefix="/v1/predict", tags=["Predict"])
+app.include_router(detect.router, prefix="/v1/detect", tags=["Detect"])
 
 if __name__ == "__main__":
     import uvicorn
