@@ -1,18 +1,25 @@
-from fastapi import APIRouter, File, UploadFile
-from models.yolo_model import YOLOModel
+from fastapi import APIRouter, File, Form, HTTPException, UploadFile
 import numpy as np
 import cv2
+from services.solution_service import SolutionService
+from services.yolo_service import YOLOService
 
 router = APIRouter()
 
-# Initialize model
-yolo_model = YOLOModel("models/tomato.pt")
+yolo_service = YOLOService()
+solution_service = SolutionService()
 
 @router.post("/")
-async def predict(image: UploadFile = File(...)):
+async def predict(plant_type: str = Form(...), image: UploadFile = File(...)):
     """
     Predict metadata of detected objects.
     """
+    # Validate model
+    try:
+        model = yolo_service.load_model(plant_type)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    
     image_data = await image.read()
 
     nparr = np.frombuffer(image_data, np.uint8)
@@ -20,17 +27,12 @@ async def predict(image: UploadFile = File(...)):
     if img is None:
         raise ValueError("Failed to decode image. The image may be corrupted or invalid.")
     
-    results = yolo_model.predict(img)
+    # Run the predictions
+    predictions = yolo_service.predict(model, img)
 
-    # Parse results
-    predictions = []
-    for result in results:
-        for box in result.boxes.xyxy:  # Bounding box coordinates
-            print(box)
-            x1, y1, x2, y2 = map(int, box[:4])
-            # TODO(wisnu): recheck this confidence & class 
-            conf = float(box[2])  # Confidence score
-            cls = int(box[3])     # Class ID
-            predictions.append({"box": [x1, y1, x2, y2], "confidence": conf, "class_id": cls})
-    
-    return {"predictions": predictions}
+    # Add solutions to predictions
+    for prediction in predictions:
+        disease = prediction["class_name"]
+        prediction["solution"] = solution_service.get_solution(plant_type, disease)
+     
+    return {"plant_type": plant_type, "predictions": predictions}

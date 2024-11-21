@@ -1,20 +1,27 @@
-from fastapi import APIRouter, File, UploadFile
-from fastapi.responses import StreamingResponse
-from models.yolo_model import YOLOModel
-import cv2
-import numpy as np
 import io
+from fastapi import APIRouter, File, Form, HTTPException, UploadFile
+from fastapi.responses import StreamingResponse
+import numpy as np
+import cv2
+from services.solution_service import SolutionService
+from services.yolo_service import YOLOService
 
 router = APIRouter()
 
-# Initialize model
-yolo_model = YOLOModel("models/tomato.pt")
+yolo_service = YOLOService()
+solution_service = SolutionService()
 
 @router.post("/")
-async def detect(image: UploadFile = File(...)):
+async def detect(plant_type: str = Form(...), image: UploadFile = File(...)):
     """
     Detect objects and return an image with bounding boxes.
     """
+    # Validate model
+    try:
+        model = yolo_service.load_model(plant_type)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    
     image_data = await image.read()
 
     nparr = np.frombuffer(image_data, np.uint8)
@@ -22,20 +29,21 @@ async def detect(image: UploadFile = File(...)):
     if img is None:
         raise ValueError("Failed to decode image. The image may be corrupted or invalid.")
 
-    results = yolo_model.predict(img)
+    # Run the predictions
+    predictions = yolo_service.predict(model, img)
 
     # Annotate image
     annotated_img = img.copy()
-    for result in results:
-        for box in result.boxes.xyxy:
-            x1, y1, x2, y2 = map(int, box[:4])
-            print(box)
-            # TODO(wisnu): recheck this confidence & class 
-            conf = float(box[2])
-            cls = int(box[3])
-            label = f"{cls} {conf:.2f}"
-            cv2.rectangle(annotated_img, (x1, y1), (x2, y2), (0, 255, 0), 2)
-            cv2.putText(annotated_img, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+    for result in predictions:
+        # Extract bounding box coordinates
+        x1, y1, x2, y2 = map(int, result['box'])
+        
+        # Prepare label with class name and confidence
+        label = f"{result['class_name']} {result['confidence']:.2f}"
+        
+        # Draw bounding box and label
+        cv2.rectangle(annotated_img, (x1, y1), (x2, y2), (0, 255, 0), 2)
+        cv2.putText(annotated_img, label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
     # Encode and return the annotated image
     _, encoded_img = cv2.imencode(".jpg", annotated_img)
