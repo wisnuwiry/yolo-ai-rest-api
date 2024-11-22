@@ -1,5 +1,5 @@
 [project]
-name = "sahabat-tani-deployment"
+name = "tanamanku"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -8,8 +8,8 @@ dependencies = [
     "flask",
     "numpy",
     "ultralytics",
-    "fastapi",
+    "fastapi[standard]",
     "uvicorn",
     "opencv-python-headless",
-    "python-multipart"
+    "python-multipart",
 ]

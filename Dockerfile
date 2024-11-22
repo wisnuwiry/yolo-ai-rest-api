@@ -1,16 +1,15 @@
-FROM python:3.12-slim-bookworm
+FROM python:3.12-slim
+
+# Install uv.
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
-# Copy the project into the image
-ADD . /app
-
-# Sync the project into a new environment, using the frozen lockfile
+# Install the application dependencies.
 WORKDIR /app
-RUN uv sync --frozen
 
-# Installing the dependencies
-COPY requirements.txt .
-RUN uv pip install -r requirements.txt
+# Copy the application into the container.
+COPY . /app
 
-# Presuming there is a `my_app` command provided by the project
-CMD ["uv", "run", "main.py"]
+RUN uv sync --frozen --no-cache
+
+# Run the application.
+CMD ["/app/.venv/bin/fastapi", "run", "main.py", "--port", "80", "--host", "0.0.0.0"]
