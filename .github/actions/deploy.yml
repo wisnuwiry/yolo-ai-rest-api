@@ -1,0 +1,29 @@
+name: Deploy a Python Function to Code Engine
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+
+  fn-py:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+
+    - name: Deploy Python Function to Code Engine
+      uses: IBM/code-engine-github-action@v1
+      with:
+        api-key: ${{ secrets.IBM_IAM_API_KEY }}
+        resource-group: 'Default'
+        region: 'eu-de'
+        project: 'tanamanku-code-engine'
+        component: 'fn'
+        runtime: python-3.11
+        name: 'tanamanku'
+        build-source: './'
+        cpu: 2
+        memory: 8G
