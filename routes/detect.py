@@ -38,7 +38,12 @@ async def detect(plant_type: str = Form(...), image: UploadFile = File(...)):
     nparr = np.frombuffer(image_data, np.uint8)
     img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     if img is None:
-        raise ValueError("Failed to decode image. The image may be corrupted or invalid.")
+        error = {
+            "status": "error",
+            "message": "Failed to decode image. The image may be corrupted or invalid."
+        }
+
+        raise HTTPException(400, error)
 
     # Run the predictions
     predictions = yolo_service.predict(model, img)
@@ -49,8 +54,10 @@ async def detect(plant_type: str = Form(...), image: UploadFile = File(...)):
         # Extract bounding box coordinates
         x1, y1, x2, y2 = map(int, result['box'])
         
+        solution_data = solution_service.get_solution_data(plant_type, result['class_name'])
+
         # Prepare label with class name and confidence
-        label = f"{result['class_name']} {result['confidence']:.2f}"
+        label = f"{solution_data['disease_label']} {result['confidence']:.2f}"
         
         # Draw bounding box and label
         cv2.rectangle(annotated_img, (x1, y1), (x2, y2), (0, 255, 0), 2)
