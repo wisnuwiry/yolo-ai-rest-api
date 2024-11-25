@@ -1,3 +1,603 @@
-no,plant_type,disease,solution
-1,tomato,Fresh Tomato,"Tidak ada indikasi serangan hama atau penyakit pada tanaman Anda, yang menunjukkan kondisi yang bersih dan terawat."
-2,tomato,Rotten Tomato,"Beberapa buah tomat terlihat busuk dengan tanda-tanda perubahan warna (coklat atau hitam), bercak basah, atau mengeluarkan bau tidak sedap. Tindakan yang Disarankan: 1. Pangkas Bagian yang Terinfeksi: Segera pangkas buah dan daun yang terinfeksi untuk mencegah penyebaran pembusukan. 2. Perbaiki Drainase: Pastikan tanah memiliki drainase yang baik untuk menghindari penumpukan air yang berlebihan. 3. Periksa Hama dan Penyakit: Periksa dengan teliti kemungkinan serangan hama atau penyakit dan gunakan pestisida organik jika diperlukan. 4. Pemupukan yang Tepat: Berikan pupuk yang mengandung kalium dan fosfor untuk membantu pemulihan tanaman. 5. Penyiraman yang Teratur: Sirami tanaman secukupnya, hindari penyiraman berlebihan yang dapat memperburuk masalah."
+no,plant_type,disease,disease_label,solution
+1,tomato,Healthy,Sehat,"## Perawatan dan Pemeliharaan untuk Menjaga Kesehatan Tanaman Tomat
+
+Tidak ada indikasi serangan hama atau penyakit pada tanaman Anda, yang menunjukkan kondisi yang bersih dan terawat.
+
+### Langkah-langkah Perawatan:
+- **Penyiraman** harus dilakukan secara teratur untuk menjaga kelembapan tanah yang optimal, namun tidak berlebihan sehingga menyebabkan genangan.
+- Gunakan **pupuk seimbang** yang kaya akan unsur hara penting seperti nitrogen, fosfor, dan kalium untuk mendukung pertumbuhan sehat tanaman.
+- Melakukan **rotasi tanaman** setiap tahun dapat membantu menghindari akumulasi patogen tanah yang dapat menyerang tanaman tomat.
+- Pastikan kebun atau area tanam tetap **bersih** dari sampah tanaman atau buah yang jatuh, yang dapat menjadi sumber infeksi penyakit.
+"
+2,tomato,Bacterial_Spot,Titik Bakteri,"## Penyakit Xanthomonas pada Tanaman Tomat
+
+Penyakit ini disebabkan oleh beberapa spesies bakteri *Xanthomonas* (tetapi terutama oleh *Xanthomonas perforans*), yang menginfeksi tomat hijau tetapi tidak tomat merah. Penyakit ini lebih umum terjadi selama musim hujan. Kerusakan pada tanaman meliputi bercak daun dan buah, yang mengakibatkan berkurangnya hasil panen, pengguguran daun, dan buah yang terbakar matahari. 
+
+### Penyebab:
+- Disebabkan oleh bakteri *Xanthomonas* spp.
+- Menyebar melalui benih yang terkontaminasi, cipratan air, angin, atau kelembapan tinggi.
+
+### Gejala:
+- Bercak coklat hingga hitam pada daun, batang, dan buah, yang bisa menyebabkan daun gugur.
+- Buah menunjukkan bercak kasar dan cekung yang membuatnya tidak layak konsumsi.
+
+### Pengendalian:
+- Gunakan benih bebas penyakit.
+- Hindari penyiraman dari atas yang menyebabkan percikan air.
+- Terapkan rotasi tanaman.
+- Gunakan fungisida berbasis tembaga untuk membatasi penyebaran bakteri.
+"
+3,tomato,Blossom_end_rot,Busuk Ujung Bunga,"## Busuk Ujung Bunga pada Tanaman
+
+**Busuk ujung bunga** dapat langsung dikenali dari kulit yang berubah warna di bagian bawah buah, berlawanan dengan batang. Ini biasanya merupakan tanda kekurangan kalsium, baik karena tanah yang buruk atau kekurangan kalsium akibat penyiraman berlebihan. Namun, menggunakan pupuk justru dapat memperburuk masalah. Menambahkan terlalu banyak nitrogen menghambat kemampuan tanaman untuk menyerap kalsium dengan cukup cepat untuk mencegah pembusukan. Seperti yang sering terjadi, menyediakan tanah yang memiliki drainase baik dan diperkaya dengan banyak bahan organik adalah pendekatan terbaik.
+
+### Penyebab:
+- Kekurangan kalsium di dalam buah, seringkali diperburuk oleh penyiraman yang tidak teratur atau kondisi tanah yang terlalu basah/kering.
+
+### Gejala:
+- Bagian bawah buah (ujung bunga) menjadi gelap, menyusut, dan kasar.
+- Umumnya menyerang buah muda.
+
+### Pengendalian:
+- Pertahankan pH tanah pada kisaran 6,3-6,8.
+- Campurkan 1/4 cangkir gipsum (kalsium sulfat) dengan tanah dari setiap lubang tanam sebelum penanaman. Ini akan menyediakan sumber kalsium yang tersedia dengan cepat tanpa mengubah pH tanah.
+- Jaga tanaman tetap terlindungi dan tersiram air sepanjang musim tanam. Jika curah hujan kurang, siram secara menyeluruh setidaknya seminggu sekali. Tanaman tomat dewasa mungkin memerlukan 2-3 galon air setiap minggu.
+- Hindari pupuk bernitrogen tinggi seperti urea.
+- Bila gejala muncul, petik buah yang terserang untuk menghentikan penyebarannya, lalu siram tanah sedikit dengan susu encer (dengan perbandingan air dan susu) untuk memberikan tambahan kalsium dengan cepat.
+"
+4,tomato,Cracking,Retakan,"## Retakan pada Buah Tomat
+
+Kondisi di mana buah tomat mengalami retakan pada kulitnya, yang disebabkan oleh fluktuasi kelembapan tanah atau pertumbuhan buah yang terlalu cepat.
+
+### Penyebab:
+- Fluktuasi kelembapan tanah, seperti setelah hujan deras setelah periode kekeringan.
+- Pertumbuhan buah yang terlalu cepat akibat kelebihan nitrogen.
+
+### Gejala:
+- Retakan pada buah, baik berbentuk melingkar di sekitar batang (concentric cracking) atau memanjang (radial cracking).
+- Retakan dapat menyebabkan infeksi sekunder oleh jamur atau bakteri.
+
+### Pengendalian:
+- Jaga kelembapan tanah stabil dengan penyiraman rutin.
+- Gunakan mulsa untuk mencegah penguapan berlebih.
+- Pilih varietas tomat tahan retak.
+"
+5,tomato,Spotted wilt Virus,Virus Layu Bercak,"## Penyakit Tomato Spotted Wilt Virus (TSWV)
+
+Penyakit yang disebabkan oleh virus *Tomato Spotted Wilt Virus* (TSWV), yang ditularkan melalui thrips, serangga kecil yang menjadi vektor utama.
+
+### Penyebab:
+- Infeksi terjadi ketika thrips yang membawa virus memakan tanaman sehat, menyimpan partikel virus.
+
+### Gejala:
+- Bercak melingkar coklat pada daun dan buah.
+- Timbul bintik-bintik cincin coklat pada tomat matang.
+- Tanaman menjadi kerdil, dan buah menunjukkan pola lingkaran atau blotch pada kulit.
+- Tanaman terinfeksi ketika thrips yang membawa virus memakan tanaman yang sehat, sehingga menyimpan partikel virus.
+
+### Pengendalian:
+- **Kendalikan thrips.**
+- Cabut dan musnahkan tanaman yang terinfeksi untuk mencegah penyebaran.
+- Beli transplantasi yang sehat. Jika tanaman transplantasi mencurigai bercak coklat pada daun, meskipun hanya satu bercak, tanaman sebaiknya tidak digunakan.
+- Gunakan varietas yang tahan.
+- Berikan pengendalian gulma yang baik. Gulma dapat menjadi inang bagi TSWV dan thrips. Thrips dapat berkembang biak pada gulma inang dan meningkatkan jumlah thrips yang tertular virus. Pengendalian gulma yang baik di tepi lahan dan di pekarangan rumah serta lanskap dapat mengurangi kemungkinan infeksi virus.
+"
+6,tomato,Sunscald,Luka Bakar,"## Kerusakan Akibat Luka Bakar Matahari pada Buah Tomat
+
+Kerusakan pada buah tomat akibat paparan sinar matahari langsung yang intens, terutama saat cuaca panas dan cerah.
+
+### Penyebab:
+- Luka bakar matahari pada tomat terjadi ketika buah hijau atau yang sudah matang terkena sinar matahari langsung dalam waktu lama, terutama selama cuaca cerah dan panas. 
+- Area lepuh besar berwarna terang terbentuk di sisi buah yang menghadap matahari. 
+- Kondisi ini paling umum terjadi pada tanaman yang kehilangan dedaunan karena dimakan serangga atau penyakit. Misalnya, penyakit busuk daun pada tomat dapat menyebabkan banyak daun mati, sehingga buah terpapar sinar matahari yang intens. 
+- Kondisi ini membuat buah tidak dapat dimakan.
+
+### Gejala:
+- Area berwarna pucat, cekung, atau melepuh pada buah tomat.
+- Bercak putih hingga kuning pada permukaan buah, yang kemudian menjadi coklat dan tipis.
+
+### Pengendalian:
+- Hindari memangkas daun berlebihan agar buah tetap terlindungi dari sinar matahari langsung.
+- Berikan naungan menggunakan kain tipis selama cuaca ekstrem.
+- Segera buang buah yang terserang dan cegah masalah tersebut dengan menanam tanaman yang kuat dan sehat dengan penutup dedaunan yang baik.
+- Kendalikan masalah serangga dan penyakit sebelum mulai menggugurkan daun tanaman.
+"
+7,Chili,Healthy,Sehat,"## Cara Menjaga Cabai Tetap Sehat
+
+Cabai yang sehat adalah cabai yang tumbuh dengan baik, bebas dari penyakit, hama, atau kerusakan. Cabai sehat memiliki buah yang tampak segar, berwarna cerah, tanpa bintik-bintik hitam atau busuk, dan bebas dari tanda-tanda infeksi atau kerusakan lainnya. Untuk menghasilkan cabai yang sehat, baik dalam pertumbuhan maupun pada saat penyimpanan dan konsumsi, perawatan yang tepat sangat diperlukan.
+
+### Cara Agar Cabai Tetap Terlihat Sehat:
+- Pilih **bibit cabai** yang berkualitas dan bebas penyakit.
+- Pastikan tanah memiliki **drainase** yang baik dan **pH** yang sesuai.
+- Lakukan **rotasi tanaman** untuk mencegah penumpukan patogen.
+- Pastikan tanaman mendapatkan cukup **sinar matahari** (6-8 jam) dan **air** yang cukup.
+- Gunakan **pupuk organik** yang tepat.
+- Periksa tanaman untuk tanda-tanda **penyakit** atau **hama**.
+- Gunakan **pestisida alami** jika diperlukan, seperti larutan daun papaya, kunyit, atau ekstrak bawang putih.
+- **Pangkas** daun dan cabang yang terinfeksi atau rusak.
+- Jaga **kebersihan area** sekitar tanaman.
+- Jangan terlalu sering **menyiram** cabai.
+- Gunakan sistem **irigasi** yang efisien seperti irigasi tetes.
+- **Simpan cabai** dalam kondisi kering dan bersih.
+- Tempatkan di tempat yang **sejuk** dan **kering**.
+"
+8,Chili,leaf curl,Daun Keriting,"## Leaf Curl pada Tanaman
+
+**Leaf curl** adalah kondisi di mana daun tanaman mengalami perubahan bentuk, menjadi melengkung atau terkerut. Masalah ini biasanya disebabkan oleh infeksi virus, bakteri, atau serangan serangga. Dalam beberapa kasus, kondisi lingkungan yang buruk seperti suhu yang terlalu tinggi atau perubahan cuaca ekstrem juga dapat mempengaruhi kondisi daun.
+
+### Penyebab:
+- **Virus** (seperti *Cucumber mosaic virus* atau *Tomato yellow leaf curl virus*).
+- **Serangga penghisap** seperti aphids dan whitefly.
+- **Perubahan cuaca** atau kekurangan air.
+
+### Gejala:
+- Daun melengkung atau terkerut ke arah atas atau bawah.
+- Daun tampak menguning dan kering, terkadang dengan bercak-bercak pada permukaan daun.
+- Penurunan pertumbuhan tanaman secara umum.
+
+### Pengendalian:
+- Gunakan **insektisida alami** seperti neem oil untuk mengendalikan hama penghisap daun.
+- Lakukan **rotasi tanaman** untuk menghindari penumpukan virus atau patogen.
+- **Buang dan musnahkan** daun yang terinfeksi agar tidak menyebar.
+- Perbaiki **kondisi lingkungan** tanaman, seperti memastikan cukupnya cahaya matahari dan menghindari kelembapan yang berlebihan.
+"
+9,Chili,leaf spot,Daun Bercak,"## Leaf Spot pada Tanaman
+
+**Leaf spot** adalah penyakit yang menyebabkan munculnya bercak-bercak pada daun. Bercak ini dapat berwarna coklat, hitam, atau kuning. Penyakit ini biasanya disebabkan oleh infeksi jamur atau bakteri yang berkembang pada daun tanaman, terutama dalam kondisi kelembapan tinggi.
+
+### Penyebab:
+- **Jamur**: (*Cercospora*, *Septoria*, *Alternaria*).
+- **Bakteri**: (*Xanthomonas*, *Pseudomonas*).
+- Kondisi lingkungan yang lembap dan kurang **sirkulasi udara**.
+
+### Gejala:
+- Munculnya bercak-bercak yang berwarna coklat atau hitam dengan pinggiran yang kabur.
+- Bercak dapat meluas dan menyebabkan daun mengering atau rontok.
+- Penurunan **fotosintesis** karena daun yang terinfeksi.
+
+### Pengendalian:
+- **Cegah** dengan memangkas daun yang terinfeksi dan membuangnya.
+- Gunakan **fungisida** berbahan dasar tembaga atau fungisida alami untuk membunuh spora jamur.
+- Tingkatkan **sirkulasi udara** di sekitar tanaman dengan memberi jarak tanam yang cukup.
+- Pastikan **penyiraman** dilakukan pada dasar tanaman, bukan daun, untuk mencegah kelembapan berlebih.
+"
+10,Chili,powdery mildew,Powdery Mildew,"## Powdery Mildew pada Tanaman
+
+**Powdery mildew** adalah penyakit jamur yang muncul sebagai lapisan putih atau abu-abu di permukaan daun, batang, atau bunga. Jamur ini sering berkembang dalam kondisi kelembapan rendah dan suhu yang moderat.
+
+### Penyebab:
+- **Jamur** dari keluarga *Erysiphaceae*.
+- Kondisi kelembapan rendah dan suhu yang hangat.
+
+### Gejala:
+- Muncul lapisan putih atau seperti tepung di permukaan daun dan batang.
+- Daun yang terinfeksi dapat menggulung, menguning, atau kering.
+- Terkadang, pertumbuhan tanaman terhambat dan bunga tidak dapat berkembang dengan baik.
+
+### Pengendalian:
+- Gunakan **fungisida** berbasis sulfur atau baking soda (natrium bikarbonat) untuk mengendalikan jamur.
+- Jaga **sirkulasi udara** yang baik di sekitar tanaman untuk mengurangi kelembapan berlebih.
+- Cegah penularan dengan **memangkas** bagian tanaman yang terinfeksi.
+"
+11,Chili,whitefly,Whitefly,"## Whitefly pada Tanaman
+
+**Whitefly** adalah serangga kecil berwarna putih yang sering ditemukan di bawah daun tanaman. Mereka menghisap cairan dari daun tanaman, mengurangi daya fotosintesis, dan dapat menyebarkan virus tanaman seperti *Tomato yellow leaf curl virus*.
+
+### Penyebab:
+- **Serangga whitefly** (misalnya *Bemisia tabaci*).
+- Penyebaran virus melalui infeksi oleh serangga penghisap.
+
+### Gejala:
+- Daun **menguning**, melengkung, dan akhirnya rontok.
+- Ditemukan banyak **whitefly** di bagian bawah daun, terutama saat daun digoyang.
+- Produksi **getah berlebihan** yang dapat menyebabkan *sooty mold* (jamur jelaga) tumbuh di permukaan daun.
+
+### Pengendalian:
+- Gunakan **insektisida** berbahan dasar neem oil atau pestisida organik lainnya.
+- Pasang **perangkap kuning** untuk menarik whitefly.
+- Cegah infeksi lebih lanjut dengan **memangkas** dan membuang daun yang terinfeksi.
+- Gunakan teknik **pengendalian biologis** seperti memperkenalkan predator alami seperti *Encarsia formosa*.
+"
+12,Chili,yellowish,Daun Kuning,"## Penyebab Daun Kuning pada Tanaman
+
+**Yellowish** kuningnya daun tanaman bisa disebabkan oleh berbagai faktor, termasuk kekurangan unsur hara, serangan hama, penyakit, atau kondisi tanah yang buruk. Hal ini mengganggu fotosintesis dan mempengaruhi kesehatan tanaman secara keseluruhan.
+
+### Penyebab:
+- **Kekurangan unsur hara** seperti nitrogen, besi, atau magnesium.
+- **Penyiraman yang tidak tepat** (terlalu banyak atau terlalu sedikit air).
+- **Hama atau penyakit** seperti aphids, whitefly, atau jamur.
+- **Drainase tanah yang buruk** atau kelebihan air yang menyebabkan akar membusuk.
+
+### Gejala:
+- Daun berubah warna menjadi **kuning**, biasanya dimulai dari ujung daun atau sepanjang urat daun.
+- Terkadang, daun juga bisa **mengering** atau **mengeriput**.
+- **Pertumbuhan tanaman terhambat** atau tidak optimal.
+
+### Pengendalian:
+- Perbaiki kondisi tanah dengan menambah **pupuk yang mengandung nitrogen**.
+- Periksa dan kendalikan serangan **hama** dengan insektisida alami.
+- Pastikan tanaman mendapat **air yang cukup**, tetapi tidak berlebihan.
+- Perbaiki **drainase tanah** untuk mencegah akar tergenang.
+"
+13,Spinach,,Kekurangan Mangan,"## Kekurangan Mangan pada Tanaman
+
+**Kekurangan mangan** pada tanaman adalah salah satu jenis kekurangan unsur hara mikro yang sering ditemukan pada tanaman pertanian. Mangan (Mn) merupakan unsur yang sangat penting dalam proses fotosintesis, pembentukan klorofil, dan metabolisme tanaman secara umum. Kekurangan mangan dapat mempengaruhi pertumbuhan tanaman dan mengurangi hasil panen jika tidak segera diatasi. Tanaman yang kekurangan mangan umumnya menunjukkan gejala spesifik yang dapat dikenali dengan baik.
+
+### Penyebab:
+- **Tanah dengan pH tinggi** (alkali) dapat mengurangi ketersediaan mangan bagi tanaman. Mangan lebih mudah diserap oleh tanaman pada pH tanah yang sedikit asam (pH 5.5–6.5).
+- **Tanah yang kekurangan air** atau memiliki drainase buruk dapat menghambat kemampuan akar untuk menyerap mangan dari tanah.
+- **Tanah yang terlalu basa** atau memiliki kandungan kalsium yang tinggi dapat mengikat mangan, sehingga tanaman kesulitan untuk menyerapnya.
+- **Kelebihan unsur-unsur tertentu** seperti besi (Fe), tembaga (Cu), dan fosfor (P) dapat menghambat penyerapan mangan oleh tanaman.
+- Tanaman yang kekurangan air, tidak mendapatkan cahaya yang cukup, atau memiliki akar yang rusak akan kesulitan dalam menyerap mangan yang tersedia di tanah.
+
+### Gejala:
+- **Daun muda** mulai menguning di antara tulang daun (*interveinal chlorosis*), sementara urat daun tetap hijau. Gejala ini sangat khas pada tanaman yang kekurangan mangan.
+- Daun yang terinfeksi kekurangan mangan sering menunjukkan **bercak-bercak kecil** yang berwarna coklat atau hitam di bagian tepi atau antara urat daun.
+- Tanaman yang kekurangan mangan menunjukkan **pertumbuhan yang lambat**, terutama pada bagian daun muda dan pucuk tanaman.
+- Daun yang terpengaruh menjadi lebih kecil dan **misshapen**, serta sering kali menunjukkan pertumbuhan yang kerdil atau terhambat.
+- Pada tingkat kekurangan yang lebih parah, ujung daun muda mulai **mengering dan mati**.
+- Beberapa tanaman, seperti padi, bisa menunjukkan **bintik putih** atau perubahan warna yang menunjukkan adanya defisiensi mangan.
+
+### Pengendalian:
+- Gunakan **pupuk yang mengandung mangan**, seperti sulfat mangan (MnSO₄) atau mangan oksida (MnO), untuk meningkatkan kadar mangan di tanah.
+- Pemberian pupuk **foliar** dengan mangan juga dapat menjadi solusi cepat, dengan menyemprotkan pupuk mangan langsung ke daun.
+- Jika tanah memiliki pH tinggi, **perbaiki pH tanah** menjadi sedikit asam (pH 5.5–6.5) dengan menggunakan bahan pengatur pH seperti belerang.
+- Penggunaan **bahan organik** seperti kompos juga bisa membantu menurunkan pH tanah dan memperbaiki struktur tanah.
+- Pastikan tanah memiliki **drainase yang baik** untuk mencegah genangan air yang dapat mengganggu penyerapan mangan oleh tanaman.
+- Pada tanah yang terlalu padat atau lempung, pertimbangkan untuk mengaplikasikan bahan organik atau memperbaiki struktur tanah.
+- Pastikan tanaman mendapatkan pasokan **unsur hara yang seimbang**, dan hindari kelebihan unsur yang dapat menghambat penyerapan mangan seperti kalsium, fosfor, atau besi.
+- Berikan **penyiraman yang cukup** untuk menjaga kelembaban tanah yang optimal, terutama pada tanaman muda atau pada tanaman yang sedang mengalami stres akibat kekeringan.
+"
+14,Spinach,karat_putih,Karat Putih,"## Karat Putih pada Tanaman
+
+**Karat putih** adalah penyakit yang disebabkan oleh infeksi jamur yang menyerang tanaman. Penyakit ini biasanya terlihat pada bagian daun, batang, atau bagian tanaman lainnya, yang ditandai dengan adanya bercak putih yang menyerupai debu atau bubuk. Jamur penyebab karat putih termasuk dalam golongan *Puccinia*, yang menyebar melalui spora yang mudah terbawa oleh angin atau air. Karat putih dapat mengurangi kualitas dan hasil panen tanaman jika tidak segera dikendalikan. Penyakit ini umumnya menyerang tanaman yang tumbuh dalam kondisi lembap dengan suhu yang cukup hangat.
+
+### Penyebab:
+- **Karat putih** disebabkan oleh infeksi jamur dari golongan *Puccinia*. Jamur ini hidup di atas tanaman inang dan berkembang biak dengan cara menghasilkan spora yang sangat kecil dan mudah tersebar oleh angin, air, atau bahkan alat pertanian.
+- Beberapa faktor yang mendukung terjadinya karat putih antara lain: kelembapan, suhu, tanah, dan lingkungan sekitarnya.
+
+### Gejala:
+- **Bercak Putih**: Muncul bercak putih atau bubuk pada daun yang terinfeksi.
+- **Perubahan Warna Daun**: Daun yang terinfeksi menjadi kuning, coklat, dan akhirnya mati.
+- **Pertumbuhan Terhambat**: Tanaman tumbuh lebih lambat atau terhambat karena kerusakan pada daun.
+- **Deformasi**: Bagian tanaman seperti batang atau buah dapat mengalami kerusakan atau deformasi.
+- **Spora Putih**: Massa spora putih terlihat di permukaan tanaman yang terinfeksi.
+
+### Pengendalian:
+- **Penggunaan Fungisida**: Aplikasikan fungisida yang tepat untuk membasmi jamur penyebab karat putih.
+- **Pemangkasan Tanaman Terinfeksi**: Potong dan buang bagian tanaman yang terinfeksi untuk mencegah penyebaran.
+- **Pengaturan Jarak Tanam**: Berikan jarak yang cukup antar tanaman untuk meningkatkan sirkulasi udara.
+- **Pengelolaan Kelembaban**: Kurangi kelembaban berlebih dengan cara mengatur irigasi dan tidak menyiram daun langsung.
+- **Rotasi Tanaman**: Lakukan rotasi tanaman untuk mencegah jamur berkembang biak terus-menerus.
+- **Gunakan Varietas Tahan**: Pilih varietas tanaman yang lebih tahan terhadap penyakit karat putih.
+- **Pembersihan Alat Pertanian**: Desinfeksi alat pertanian untuk menghindari penyebaran penyakit.
+"
+15,Spinach,virus_Keriting,Virus Keriting,"## Virus Keriting pada Tanaman
+
+**Virus keriting** adalah salah satu penyakit yang disebabkan oleh infeksi virus pada tanaman, yang mengakibatkan perubahan morfologi dan fisiologi tanaman. Penyakit ini dapat menyerang berbagai jenis tanaman, terutama tanaman perkebunan dan hortikultura, seperti tembakau, tomat, paprika, kentang, dan cabai. Virus yang menyebabkan keriting pada tanaman biasanya menyebar melalui vektor seperti serangga atau melalui peralatan pertanian yang terkontaminasi. Penyakit ini dapat menurunkan kualitas dan hasil panen tanaman, bahkan dalam beberapa kasus menyebabkan kerugian yang signifikan.
+
+### Penyebab:
+- **Serangga penghisap**, seperti kutu daun (aphids), thrips, dan whiteflies, adalah vektor utama yang mentransfer virus dari tanaman satu ke tanaman lainnya.
+- Tanaman yang terinfeksi oleh virus menjadi sumber utama penularan bagi tanaman sehat di sekitarnya.
+- Penggunaan alat-alat pertanian yang terkontaminasi oleh bagian tanaman yang terinfeksi virus juga dapat menjadi media penyebaran virus.
+- Penyiraman tanaman dengan air yang mengandung virus juga bisa menjadi media penularan.
+
+### Gejala:
+- **Daun yang mengalami perubahan bentuk**, seperti keriting atau menggulung ke arah bawah.
+- Daun yang terinfeksi akan menunjukkan gejala **kekuningan** atau klorosis pada bagian tertentu, terutama pada daun muda.
+- Tanaman yang terinfeksi virus keriting biasanya mengalami **pertumbuhan terhambat**, dengan ukuran daun dan batang yang lebih kecil daripada tanaman yang sehat.
+- Pada beberapa kasus, **buah dan bunga** juga bisa mengalami penyusutan dan deformasi. Misalnya, buah menjadi kecil atau tidak berkembang dengan baik.
+- Beberapa tanaman yang terinfeksi dapat menunjukkan **bercak-bercak** pada batang atau daun yang dapat mengakibatkan layu atau pembusukan.
+- **Daun yang terinfeksi dapat mengering** dan rontok lebih awal dari waktu seharusnya.
+- Pada tanaman perkebunan atau hortikultura, gejala virus keriting sering mengakibatkan penurunan **kualitas dan hasil panen** yang signifikan, baik dari segi ukuran maupun rasa.
+
+### Pengendalian:
+- Gunakan **insektisida** untuk mengendalikan kutu daun, thrips, dan whiteflies.
+- Gunakan **insektisida nabati** (minyak neem, sabun insektisida) untuk pengendalian organik.
+- Pasang **jebakan atau feromon** untuk menangkap serangga vektor.
+- **Cabut dan musnahkan tanaman** yang terinfeksi virus untuk mencegah penyebaran.
+- Pilih **varietas tanaman** yang lebih tahan atau resisten terhadap virus keriting.
+"
+16,Lettuce,Bacterial,Penyakit Bakteri,"## Penyakit Bakteri pada Tanaman Selada
+
+Penyakit ini disebabkan oleh bakteri, biasanya menyerang daun selada, menyebabkan bercak coklat, layu, atau kerusakan jaringan tanaman.
+
+### Penyebab:
+- Disebabkan oleh bakteri **Xanthomonas campestris** yang menyebar melalui air, angin, dan alat yang terkontaminasi. Kondisi lembap mempercepat penyebaran.
+
+### Gejala:
+- Muncul **bercak kecil berwarna cokelat atau hitam** pada daun. Bercak sering kali dikelilingi area kuning.
+
+### Solusi Pengendalian:
+- Gunakan **benih yang bebas penyakit**.
+- Hindari **irigasi dari atas** untuk mencegah percikan air yang menyebarkan bakteri.
+- **Rotasi tanaman** dengan tanaman non-inang.
+- **Sanitasi alat dan lahan** setelah panen.
+"
+17,Lettuce,"Downy_mildew_on_lettuce
+",Jamur Downy Mildew,"## Penyakit Jamur Downy Mildew pada Selada
+
+Penyakit jamur yang menyebabkan bercak kuning atau coklat pada daun, dengan lapisan putih keabuan di bawah daun. Disebabkan oleh **Bremia lactucae** dan sering dipicu oleh kondisi lembab.
+
+### Penyebab:
+- Disebabkan oleh jamur **Bremia lactucae**, yang berkembang di lingkungan lembap dan suhu dingin.
+
+### Gejala:
+- Muncul **bercak kuning** pada daun yang kemudian berubah menjadi cokelat dan mengering. Pada bagian bawah daun, terdapat lapisan putih seperti kapas.
+
+### Solusi Pengendalian:
+- Tanam **varietas selada yang tahan** terhadap downy mildew.
+- Pastikan **sirkulasi udara** yang baik di sekitar tanaman.
+- Gunakan **fungisida** secara preventif sesuai rekomendasi.
+"
+18,Lettuce,"Lettuce Mosaic Virus
+",Virus Mosaic,"## Virus Pada Selada (Lettuce Mosaic Virus - LMV)
+
+Virus yang menyerang selada, menyebabkan daun keriting, bercak kuning tidak merata, dan pertumbuhan tanaman terganggu. Penularannya biasanya melalui biji atau serangga seperti kutu daun.
+
+### Penyebab:
+- Virus ini ditularkan melalui **kutu daun (aphids)** dan **benih yang terinfeksi**.
+
+### Gejala:
+- Daun menunjukkan pola **bercak atau mosaik**, pertumbuhan tanaman terhambat, dan hasil panen menurun drastis.
+
+### Solusi Pengendalian:
+- Gunakan **benih bersertifikasi bebas LMV**.
+- **Kendalikan kutu daun** menggunakan insektisida nabati atau kimia sesuai kebutuhan.
+- Hindari menanam selada di **area dengan riwayat infeksi virus**.
+"
+19,Lettuce,"Powdery_mildew_on_lettuce
+",Jamur Powdery Mildew,"## Penyakit Jamur Powdery Mildew pada Tanaman
+
+Penyakit jamur yang ditandai dengan lapisan putih tepung di permukaan daun. Penyakit ini dapat menghambat fotosintesis dan pertumbuhan tanaman.
+
+### Penyebab:
+- Disebabkan oleh jamur **Golovinomyces cichoracearum**. Penyakit ini menyebar melalui **spora** yang terbawa angin di lingkungan rumah kaca dengan kelembapan tinggi.
+
+### Gejala:
+- Muncul **bercak putih** seperti tepung pada daun, terutama di bagian bawah.
+
+### Solusi Pengendalian:
+- **Kurangi kelembapan** dengan ventilasi yang baik dan gunakan **kipas** untuk meningkatkan sirkulasi udara.
+- Pilih **varietas yang lebih tahan** terhadap jamur ini.
+- Gunakan **fungisida** secara preventif sebelum gejala terlihat.
+"
+20,Lettuce,Septoria_Blight_on_lettuce,Jamur Septoria,"## Penyakit Jamur Septoria pada Tanaman Selada
+
+Penyakit jamur yang menyebabkan bercak coklat atau hitam kecil pada daun, sering kali dengan tepi yang lebih gelap. Disebabkan oleh **Septoria lactucae** dan dapat menyebar melalui air atau angin.
+
+### Penyebab:
+- Disebabkan oleh jamur **Septoria lactucae**. Spora menyebar melalui **air hujan** atau irigasi yang memercik.
+
+### Gejala:
+- Muncul **bercak kecil** pada daun yang berwarna cokelat dengan pinggiran gelap. Daun yang terinfeksi berat akan mati.
+
+### Solusi Pengendalian:
+- Lakukan **rotasi tanaman** dengan tanaman non-inang.
+- **Hilangkan** sisa-sisa tanaman yang terinfeksi setelah panen.
+- Gunakan **fungisida** yang direkomendasikan untuk **Septoria**.
+"
+22,Melon,Aphids,Kutu Daun,"## Pengendalian Aphids (Kutu Daun) pada Tanaman Melon
+
+**Aphids** (kutu daun) adalah serangga kecil yang sering menyerang berbagai jenis tanaman, termasuk melon. Aphids adalah hama penghisap yang dapat menyebabkan kerusakan serius pada tanaman melon, karena mereka menghisap cairan tanaman dan menyebarkan penyakit, termasuk virus. Selain itu, aphids juga bisa mengganggu pertumbuhan tanaman, menyebabkan deformasi pada daun, serta menurunkan hasil dan kualitas tanaman melon.
+
+### Penyebab:
+Aphids adalah serangga kecil berwarna hijau, hitam, atau coklat yang menghisap cairan dari daun dan batang tanaman melon. Mereka dapat menyebarkan berbagai virus tanaman, termasuk **virus kunir (CMV)** dan **virus mosaik timun (CMV)**, yang dapat menyebabkan kerusakan tambahan pada tanaman. Aphids dapat mentransfer virus dari tanaman yang terinfeksi ke tanaman yang sehat melalui mulut mereka saat menghisap cairan dari tanaman yang terinfeksi. Virus yang dibawa oleh aphids sering kali menyebabkan gejala-gejala seperti kerusakan daun, deformasi, dan penurunan hasil.
+
+### Gejala:
+- **Daun Menguning (Klorosis)**: Daun yang terinfeksi aphids akan menunjukkan gejala **klorosis** (menguning) karena berkurangnya jumlah klorofil akibat penghisapan cairan oleh aphids.
+- **Daun Terkerut atau Melengkung**: Daun melon yang terinfeksi oleh aphids sering kali menjadi terkerut atau melengkung ke bawah, disebabkan oleh kerusakan fisik dan pengaruh hormon dari aphids.
+- **Pertumbuhan Terhambat**: Tanaman melon yang diserang oleh aphids akan tumbuh lebih lambat dan terhambat, karena penghisapan cairan oleh hama ini mengurangi daya tumbuh tanaman.
+- **Kotoran Aphids (Drosophila)**: Kotoran yang dikeluarkan oleh aphids mengandung gula, yang menjadi tempat berkembangnya **jamur hitam (sooty mold)**, yang menutupi daun dan mengurangi efisiensi fotosintesis.
+- **Deformasi Buah dan Bunga**: Aphids dapat menyebabkan deformasi atau kerusakan pada buah dan bunga, yang mengarah pada penurunan hasil dan kualitas tanaman melon.
+- **Gejala Virus**: Jika aphids membawa virus, tanaman melon akan menunjukkan gejala virus seperti **mosaik daun**, bercak-bercak atau garis-garis pada daun, dan pertumbuhan yang buruk.
+
+### Pengendalian:
+- **Gunakan Insektisida**: Gunakan insektisida sistemik atau kontak, seperti **pyrethrin** atau **minyak neem**, dengan dosis yang tepat untuk menghindari resistensi pada aphids.
+- **Pestisida Nabati**: Minyak neem bisa digunakan sebagai pestisida nabati yang efektif untuk mengurangi populasi aphids tanpa merusak lingkungan.
+- **Pemangkasan Tanaman**: Potong dan buang daun atau bagian tanaman yang terinfeksi aphids untuk mengurangi penyebaran ke bagian tanaman yang sehat.
+- **Manfaatkan Musuh Alami**: Manfaatkan kumbang pemakan kutu daun (**ladybug**) sebagai musuh alami untuk mengontrol populasi aphids secara alami.
+- **Rotasi Tanaman**: Lakukan rotasi tanaman untuk mencegah populasi aphids menumpuk pada satu jenis tanaman.
+- **Bersihkan Kebun**: Pastikan kebun selalu bersih dari gulma atau sisa tanaman yang terinfeksi aphids untuk mencegah infestasi lebih lanjut.
+- **Jebakan Kuning Lengket**: Pasang jebakan kuning lengket di sekitar tanaman melon untuk menangkap aphids yang tertarik pada warna kuning.
+- **Penyiraman dan Pemupukan**: Pastikan tanaman mendapatkan penyiraman yang cukup, pemupukan yang tepat, dan pengaturan jarak tanam yang optimal untuk meningkatkan ketahanan terhadap serangan aphids.
+"
+23,Melon,Leafminers,Leafminers,"## Pengendalian Leafminers pada Tanaman Melon
+
+**Leafminers** adalah serangga yang menyerang tanaman melon dengan cara menggali terowongan di dalam daun. Larva leafminer menyebabkan kerusakan yang dapat mempengaruhi fotosintesis dan kesehatan tanaman secara keseluruhan.
+
+### Penyebab:
+Larva dari **leafminers** menggali terowongan antara lapisan daun, mengakibatkan daun terlihat berlubang dan mengurangi efisiensi fotosintesis tanaman melon.
+
+### Gejala:
+- **Terowongan pada Daun**: Daun yang terinfeksi oleh leafminers akan menunjukkan **terowongan atau jalur putih** yang jelas akibat penggalian larva.
+- **Daun Menguning atau Pucat**: Daun yang terinfeksi juga dapat menguning atau berwarna pucat karena kerusakan pada jaringan daun.
+- **Penurunan Pertumbuhan**: Tanaman melon yang diserang leafminers dapat mengalami penurunan pertumbuhan dan hasil.
+
+### Pengendalian:
+- **Gunakan Insektisida**: Gunakan insektisida yang mengandung **spinosad** atau **pyrethrin** untuk mengendalikan populasi leafminers.
+- **Pemangkasan Daun Terinfeksi**: Potong dan buang daun yang terinfeksi untuk mengurangi penyebaran serangga.
+- **Manfaatkan Musuh Alami**: Manfaatkan kumbang pemangsa atau parasit untuk mengendalikan larva leafminers.
+- **Bersihkan Kebun**: Pastikan kebun tetap bersih dari sisa-sisa tanaman yang terinfeksi dan **gulma**, yang dapat menjadi tempat persembunyian leafminers.
+"
+24,Melon,Moths,Ngengat,"## Pengendalian Ngengat pada Tanaman Melon
+
+**Ngengat (Moths)** adalah serangga yang dapat menyerang tanaman melon, terutama pada tahap larva mereka (ulat ngengat). Larva ngengat menggigit dan memakan daun, bunga, dan buah tanaman melon. Serangan ngengat dapat menyebabkan kerusakan langsung pada tanaman dan meningkatkan risiko infeksi penyakit sekunder.
+
+### Penyebab:
+- **Telur Ngengat**: Ngengat dewasa bertelur pada daun tanaman melon. Setelah telur menetas, larva (ulat ngengat) mulai memakan daun, bunga, dan kadang buah melon.
+- **Kerusakan oleh Larva**: Ulat ngengat dapat merusak jaringan tanaman dan mengganggu pertumbuhan tanaman dengan cara menggali terowongan di dalam daun atau buah.
+
+### Gejala:
+- **Lubang pada Daun**: Daun tanaman melon yang diserang ngengat menunjukkan **lubang-lubang kecil** akibat gigitan larva.
+- **Pertumbuhan Terganggu**: Tanaman melon yang diserang dapat mengalami pertumbuhan yang terhambat, dengan daun yang keriput dan cacat.
+- **Kerusakan pada Bunga dan Buah**: Ulat ngengat juga dapat merusak bunga dan buah, meninggalkan bekas kerusakan yang mengurangi kualitas hasil.
+- **Pembusukan Buah**: Jika ulat menggerogoti buah, bisa menyebabkan **pembusukan** atau penurunan kualitas buah melon.
+
+### Pengendalian:
+- **Gunakan Insektisida**: Gunakan insektisida yang mengandung bahan aktif seperti **pyrethrin** atau **spinosad** untuk mengendalikan larva ngengat.
+- **Pemangkasan**: Potong dan buang daun, bunga, atau buah yang terinfeksi untuk mencegah penyebaran hama.
+- **Musuh Alami**: Manfaatkan kumbang pemangsa dan laba-laba untuk memangsa larva ngengat.
+- **Perangkap Feromon**: Gunakan **perangkap feromon** untuk menarik ngengat dewasa dan mengurangi peneluran mereka pada tanaman melon.
+- **Rotasi Tanaman**: Lakukan rotasi tanaman untuk menghindari penumpukan hama ngengat pada tanaman yang sama.
+"
+25,Melon,Red-Melon-Beetle,Kumbang Melom Berah,"## Pengendalian Kumbang Melon Merah (Red Melon Beetle)
+
+**Red Melon Beetle (Aulacophora foveicollis)** adalah kumbang yang menyerang tanaman melon. Kumbang ini memakan daun, bunga, dan kadang buah melon, yang menyebabkan kerusakan pada tanaman dan penurunan hasil.
+
+### Penyebab:
+- **Kumbang Melon Merah Dewasa**: Kumbang dewasa menggigit dan menggerogoti daun tanaman melon, mengurangi kemampuan daun untuk berfotosintesis.
+- **Larva Kumbang**: Larva kumbang ini juga dapat menyerang akar tanaman, mengganggu proses pertumbuhan tanaman melon.
+
+### Gejala:
+- **Lubang pada Daun**: Daun tanaman melon yang diserang akan menunjukkan **lubang-lubang kecil** dan bekas gigitan.
+- **Kerusakan pada Bunga dan Buah**: Kumbang juga menyerang bunga dan buah melon, menyebabkan kerusakan pada bagian tersebut.
+- **Pertumbuhan Terganggu**: Tanaman melon yang diserang oleh kumbang ini cenderung tumbuh lebih lambat dan kurang produktif.
+- **Deformasi Tanaman**: Tanaman yang terinfeksi akan mengalami **deformasi** pada daun dan bagian lainnya, mengurangi hasil dan kualitas.
+
+### Pengendalian:
+- **Gunakan Insektisida**: Gunakan insektisida berbahan aktif **pyrethrin** atau **carbaryl** untuk mengatasi kumbang melon merah.
+- **Pemangkasan**: Potong dan buang bagian tanaman yang terinfeksi untuk mengurangi penyebaran hama.
+- **Musuh Alami**: Manfaatkan kumbang pemangsa dan parasit untuk mengendalikan populasi kumbang.
+- **Jaring Pelindung**: Pasang **jaring pelindung** untuk menghindari kumbang dewasa mengakses tanaman melon.
+- **Rotasi Tanaman**: Lakukan **rotasi tanaman** untuk mencegah penumpukan kumbang melon merah dalam satu area kebun.
+"
+26,Melon,Whiteflies,Whiteflies,"## Pengendalian Whiteflies pada Tanaman Melon
+
+**Whiteflies** adalah serangga kecil berwarna putih yang sering menyerang tanaman melon. Whiteflies adalah hama penghisap yang dapat menurunkan kualitas tanaman dengan menghisap cairan tanaman dan menyebarkan penyakit.
+
+### Penyebab:
+- **Penghisapan Cairan**: Whiteflies menghisap cairan dari daun dan batang tanaman melon. Selain mengurangi kesuburan tanaman, whiteflies juga dapat membawa **virus tanaman** seperti virus kunir dan mosaik timun, yang dapat merusak tanaman lebih lanjut.
+
+### Gejala:
+- **Klorosis pada Daun**: Daun tanaman melon yang terinfeksi akan menguning (klorosis) akibat penghisapan cairan oleh whiteflies.
+- **Deformasi Daun**: Daun melon yang terinfeksi sering kali menggulung atau melengkung ke bawah akibat kerusakan yang disebabkan oleh hama ini.
+- **Pertumbuhan Terganggu**: Tanaman melon yang diserang whiteflies akan tumbuh lebih lambat dan terhambat.
+- **Jamur Hitam (Sooty Mold)**: Whiteflies menghasilkan kotoran berwarna hitam yang mengandung gula, yang menjadi tempat berkembangnya **jamur hitam (sooty mold)**, mengurangi kemampuan daun untuk fotosintesis.
+
+### Pengendalian:
+- **Insektisida**: Gunakan insektisida seperti **pyrethrin** atau **imidacloprid** untuk mengendalikan populasi whiteflies.
+- **Perangkap Kuning**: Pasang **perangkap kuning lengket** di sekitar tanaman melon untuk menangkap whiteflies yang tertarik dengan warna kuning.
+- **Pemangkasan**: Potong dan buang daun atau bagian tanaman yang terinfeksi whiteflies untuk mencegah penyebaran lebih lanjut.
+- **Musuh Alami**: Manfaatkan musuh alami seperti **kumbang predator** atau **laba-laba** untuk mengurangi jumlah whiteflies.
+- **Kondisi Tanaman yang Optimal**: Pastikan tanaman mendapatkan cukup **air** dan **nutrisi** untuk meningkatkan ketahanan terhadap serangan whiteflies.
+"
+27,Cucumber,"Anthracnose
+",Anthracnose,"## Pengendalian Anthracnose pada Tanaman Timun
+
+**Anthracnose** disebabkan oleh jamur _Colletotrichum orbiculare_. Penyakit ini menyerang daun, batang, dan buah timun. Gejala utamanya adalah bercak cokelat atau hitam pada daun dan buah, sering disertai spora berwarna merah muda pada kondisi lembap. Penyakit ini memengaruhi kualitas dan hasil panen, terutama dalam kondisi hangat dan lembap.
+
+### Penyebab:
+- **Jamur Colletotrichum orbiculare**.
+
+### Gejala:
+- **Bercak Daun**: Dimulai dari area basah, berwarna kuning, kemudian berubah menjadi cokelat dengan bentuk tak beraturan.
+- **Lesi pada Buah dan Batang**: Lesi cokelat juga muncul pada buah dan batang, dengan spora berwarna merah muda yang terlihat pada kondisi lembap.
+
+### Pengendalian:
+- **Varietas Tahan**: Gunakan varietas yang tahan terhadap anthracnose.
+- **Benih Sehat**: Tanam benih sehat dan hindari penggunaan benih dari tanaman yang terinfeksi.
+- **Rotasi Tanaman**: Lakukan rotasi tanaman dengan tanaman non-kubis selama tiga tahun untuk mengurangi keberadaan jamur di tanah.
+- **Pengelolaan Irigasi**: Hindari irigasi overhead untuk mengurangi penyebaran spora jamur.
+"
+28,Cucumber,Bacterial-Wilt,Bacterial Wilt ,"## Pengendalian Bacterial Wilt pada Tanaman
+
+**Bacterial Wilt** disebabkan oleh bakteri _Erwinia tracheiphila_, yang ditularkan oleh kumbang penggerek daun. Tanaman yang terinfeksi menunjukkan layu mendadak akibat penyumbatan pembuluh di batang. Penyakit ini dapat menyebar dengan cepat di lapangan.
+
+### Penyebab:
+- **Bakteri Erwinia tracheiphila**, biasanya ditularkan oleh kumbang penggerek daun.
+
+### Gejala:
+- **Layu Mendadak**: Tanaman tiba-tiba layu. 
+- **Lendir Putih**: Saat batang dipotong, lendir putih dapat keluar, menandakan infeksi.
+
+### Pengendalian:
+- **Kendalikan Kumbang Vektor**: Gunakan insektisida untuk mengendalikan kumbang penggerek daun sebagai vektor utama penyebaran bakteri.
+- **Cegah Penyebaran**: Cabut dan hancurkan tanaman yang terinfeksi untuk mencegah penyebaran lebih lanjut."
+29,Cucumber,Belly-Rot,Belly Rot,"## Pengendalian Penyakit Belly Rot pada Tanaman
+
+**Belly Rot** biasanya menyerang buah yang bersentuhan langsung dengan tanah lembap. Penyakit ini disebabkan oleh patogen jamur tanah dan berkembang di lingkungan basah serta tanah dengan drainase yang buruk.
+
+### Penyebab:
+- **Jamur Rhizoctonia solani**, patogen yang menyebabkan pembusukan pada bagian bawah buah yang bersentuhan langsung dengan tanah.
+
+### Gejala:
+- **Luka Busuk pada Buah**: Terjadi pembusukan pada bagian buah yang bersentuhan dengan tanah, yang menyebabkan kerusakan pada buah.
+
+### Pengendalian:
+- **Gunakan Mulsa Plastik**: Menggunakan mulsa plastik untuk mengurangi kontak langsung buah dengan tanah, sehingga mencegah infeksi.
+- **Rotasi Tanaman**: Lakukan rotasi tanaman untuk meminimalkan keberadaan patogen di tanah dan mengurangi kemungkinan infeksi di masa mendatang.
+"
+30,Cucumber,Downy-Mildew,Downy Mildew,"## Pengendalian Penyakit Downy Mildew pada Tanaman Mentimun
+
+**Downy Mildew** adalah penyakit yang disebabkan oleh patogen jamur air yang menyerang tanaman mentimun, terutama di lingkungan lembap dan dingin. Penyakit ini menyebar melalui spora udara dan dapat menyebabkan penurunan hasil panen secara signifikan.
+
+### Penyebab:
+- **Jamur Pseudoperonospora cubensis**, patogen yang menyebabkan downy mildew pada tanaman mentimun.
+
+### Gejala:
+- **Bercak Kuning pada Daun**: Daun menunjukkan bercak kuning berbentuk sudut, yang kemudian berkembang menjadi cokelat.
+- **Spora Abu-abu**: Terdapat pertumbuhan spora abu-abu di bagian bawah daun yang terinfeksi.
+
+### Pengendalian:
+- **Gunakan Fungisida Sistemik**: Aplikasikan fungisida yang dapat mengendalikan jamur secara efektif.
+- **Tingkatkan Sirkulasi Udara**: Pastikan jarak tanam yang baik dan cukup ruang antara tanaman untuk meningkatkan sirkulasi udara, yang dapat membantu mengurangi kelembapan dan memperlambat penyebaran penyakit.
+"
+31,Cucumber,Fresh-Cucuumber,Sehat,"## Kondisi Buah Timun yang Sehat dan Segar
+
+Buah timun Anda berada dalam **kondisi segar dan sehat**, tanpa tanda-tanda infeksi penyakit atau kerusakan akibat hama. Ini menunjukkan **kualitas buah yang optimal** hasil dari perawatan yang tepat.
+
+### Ciri-ciri Buah Timun yang Sehat:
+- **Tidak ada bercak atau kerusakan pada kulit buah**.
+- **Kulit buah berwarna hijau segar** tanpa perubahan warna yang mencurigakan.
+- **Tidak ada gejala kerusakan atau pembusukan** pada bagian dalam buah.
+- **Tekstur buah padat dan renyah**, tanpa bagian yang lembek atau lembab.
+
+### Penyebab Kondisi Sehat:
+- Perawatan yang **teratur** dan **tepat** untuk mencegah infeksi penyakit dan serangan hama.
+- **Kondisi kebun** yang terjaga baik dengan **drainase yang baik** dan **sirkulasi udara yang optimal**.
+- Pengendalian hama yang efektif dan penggunaan **pupuk yang seimbang**.
+"
+32,Cucumber,Fresh-Leaf,Daun Sehat,"## Kondisi Tanaman yang Sehat dan Terawat
+
+Tanaman Anda menunjukkan **daun yang sehat**, tanpa indikasi serangan hama atau penyakit. Kondisi ini mencerminkan tanaman yang **bersih**, **subur**, dan **terawat dengan baik**.
+
+### Ciri-ciri Tanaman yang Sehat:
+- **Daun hijau cerah** tanpa bercak atau perubahan warna yang mencurigakan.
+- **Tidak ada tanda-tanda kerusakan** akibat hama atau penyakit pada bagian daun atau batang.
+- **Pertumbuhan tanaman optimal**, dengan perkembangan daun yang subur dan batang yang kokoh.
+- **Tanaman bebas dari infestasi hama**, seperti kutu daun, ulat, atau serangga lainnya.
+
+### Penyebab Kondisi Sehat:
+- **Perawatan yang tepat** dengan pemupukan yang seimbang dan pengairan yang memadai.
+- **Kebersihan kebun** yang terjaga, termasuk pengendalian gulma dan sanitasi alat pertanian.
+- Pengendalian hama secara **preventif** menggunakan metode alami atau pestisida sesuai kebutuhan.
+"
+33,Cucumber,"Gummy-Stem-Blight
+",Gummy Stem Blight,"## Penyakit Gummy Stem Blight
+
+Penyakit **Gummy Stem Blight** disebabkan oleh patogen jamur *Didymella bryoniae*, yang dapat menyerang tanaman melalui **benih** atau **jaringan tanaman**. Penyakit ini sering berkembang di **lingkungan lembap** dan pada tanaman yang sedang **stres**.
+
+### Penyebab:
+- **Jamur** *Didymella bryoniae*, yang dapat menyerang tanaman melalui infeksi pada benih atau jaringan tanaman.
+
+### Gejala:
+- **Bercak cokelat** pada daun.
+- **Batang** mengeluarkan cairan lengket berwarna cokelat yang khas dari infeksi jamur.
+
+### Pengendalian:
+- Gunakan **benih bebas penyakit** untuk mencegah penyebaran patogen.
+- Lakukan **rotasi tanaman** dengan tanaman non-cucurbitaceae untuk mengurangi akumulasi patogen di tanah."
+34,Cucumber,Pythium-Fruit-Rot,Pythium,"## Penyakit Pythium
+
+**Pythium** adalah penyakit yang disebabkan oleh **patogen jamur air** yang menyerang buah di area kontak dengan tanah. Penyakit ini berkembang pesat di kondisi **tanah basah** dan **drainase yang buruk**.
+
+### Penyebab:
+- **Jamur air** *Pythium spp.*, yang menyerang buah dan bagian tanaman yang bersentuhan langsung dengan tanah yang lembap.
+
+### Gejala:
+- **Busuk basah** pada buah, terutama pada area yang bersentuhan langsung dengan tanah.
+
+### Pengendalian:
+- Tanam di **bedengan** atau tempat tanam yang memiliki **drainase baik** untuk menghindari genangan air.
+- Gunakan **mulsa plastik** untuk mencegah kontak langsung buah dengan tanah dan mengurangi kelembapan di sekitar buah."
