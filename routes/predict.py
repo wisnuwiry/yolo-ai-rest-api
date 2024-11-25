@@ -59,10 +59,26 @@ async def predict(
         prediction["solution"] = solution_data["solution"]
         prediction["class_label"] = solution_data["disease_label"]
     
+    # TODO(wisnu): Refactor to utility function
     # Resize image and encode to base64 if `show_image` is True
     base64_image = None
     if show_image:
-        resized_img = cv2.resize(img, (300, 300))  # Resize to smaller size
+        # Define the maximum width or height
+        max_size = 400
+
+        # Get the original dimensions of the image
+        original_height, original_width = img.shape[:2]
+
+        # Calculate the scaling factor to maintain aspect ratio
+        if original_width > original_height:
+            scale_factor = max_size / original_width
+        else:
+            scale_factor = max_size / original_height
+            
+        new_width = int(original_width * scale_factor)
+        new_height = int(original_height * scale_factor)
+
+        resized_img = cv2.resize(img, (new_width, new_height), interpolation=cv2.INTER_AREA)
         _, buffer = cv2.imencode(".jpg", resized_img)
         base64_image = base64.b64encode(buffer).decode("utf-8")
      
