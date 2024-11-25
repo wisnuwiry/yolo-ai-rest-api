@@ -3,6 +3,7 @@ import numpy as np
 import cv2
 from services.solution_service import SolutionService
 from services.yolo_service import YOLOService
+from services.model_service import ModelService
 
 router = APIRouter()
 
@@ -14,11 +15,21 @@ async def predict(plant_type: str = Form(...), image: UploadFile = File(...)):
     """
     Predict metadata of detected objects.
     """
+    # Validate model with plant type
+    validation = ModelService.validate_plant_type(plant_type)
+
+    if(validation != None):
+        raise HTTPException(400, validation)
+
     # Validate model
     try:
         model = yolo_service.load_model(plant_type)
     except ValueError as e:
-        raise HTTPException(status_code=400, detail=str(e))
+        error = {
+            "status": "error",
+            "message": str(e),
+        }
+        raise HTTPException(400, error)
     
     image_data = await image.read()
 
@@ -33,6 +44,14 @@ async def predict(plant_type: str = Form(...), image: UploadFile = File(...)):
     # Add solutions to predictions
     for prediction in predictions:
         disease = prediction["class_name"]
-        prediction["solution"] = solution_service.get_solution(plant_type, disease)
+        solution_data = solution_service.get_solution_data(plant_type, disease)
+        prediction["solution"] = solution_data["solution"]
+        prediction["class_label"] = solution_data["disease_label"]
      
-    return {"plant_type": plant_type, "predictions": predictions}
+    return {
+        "detail": {
+            "status": "success",
+            "plant_type": plant_type, 
+            "predictions": predictions
+        }
+    }
