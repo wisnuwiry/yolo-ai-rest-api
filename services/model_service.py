@@ -6,7 +6,7 @@ class ModelService:
 
     # Allowed plant types and their associated file paths
     PLANT_TYPES = [
-        "tomato", "lettuce", "spinach"
+        "tomato", "lettuce", "spinach", "chili", "melon", "strawberry", "cucumber"
     ]
 
     @classmethod
