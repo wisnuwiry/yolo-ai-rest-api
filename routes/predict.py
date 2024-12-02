@@ -51,14 +51,21 @@ async def predict(
     
     # Run the predictions
     predictions = yolo_service.predict(model, img)
+    unique_class_names = set()
+    predictions_result = []
 
     # Add solutions to predictions
     for prediction in predictions:
         disease = prediction["class_name"]
-        solution_data = solution_service.get_solution_data(plant_type, disease)
-        if(solution_data != None):
-            prediction["solution"] = solution_data["solution"]
-            prediction["class_label"] = solution_data["disease_label"]
+        if disease not in unique_class_names:
+            unique_class_names.add(disease)
+
+            solution_data = solution_service.get_solution_data(plant_type, disease)
+            if(solution_data is not None):
+                prediction["solution"] = solution_data["solution"]
+                prediction["class_label"] = solution_data["disease_label"]
+            
+            predictions_result.append(prediction)
     
     # TODO(wisnu): Refactor to utility function
     # Resize image and encode to base64 if `show_image` is True
@@ -88,7 +95,7 @@ async def predict(
         "detail": {
             "status": "success",
             "plant_type": plant_type,
-            "predictions": predictions,
+            "predictions": predictions_result,
         }
     }
 

@@ -27,4 +27,4 @@ class SolutionService:
         return "Solution not found."
     
     def get_solution_data(self, plant_type, disease):
-        return self.solutions.get((plant_type, disease), None)
+        return self.solutions.get((plant_type.lower(), disease.lower()), None)
