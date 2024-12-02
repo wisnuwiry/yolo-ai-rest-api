@@ -10,10 +10,10 @@ class SolutionService:
         with open(self.solutions_file, mode='r') as file:
             reader = csv.DictReader(file)
             for row in reader:
-                key = (row["plant_type"], row["disease"])
+                key = (row["plant_type"].lower(), row["disease"].lower())
                 solutions[key] = {
-                     "plant_type": row["plant_type"],
-                     "disease": row["disease"],
+                     "plant_type": row["plant_type"].lower(),
+                     "disease": row["disease"].lower(),
                      "disease_label": row["disease_label"],
                      "solution": row["solution"],
                 }

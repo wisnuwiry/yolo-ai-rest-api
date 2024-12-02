@@ -56,8 +56,9 @@ async def predict(
     for prediction in predictions:
         disease = prediction["class_name"]
         solution_data = solution_service.get_solution_data(plant_type, disease)
-        prediction["solution"] = solution_data["solution"]
-        prediction["class_label"] = solution_data["disease_label"]
+        if(solution_data != None):
+            prediction["solution"] = solution_data["solution"]
+            prediction["class_label"] = solution_data["disease_label"]
     
     # TODO(wisnu): Refactor to utility function
     # Resize image and encode to base64 if `show_image` is True
