@@ -18,3 +18,9 @@ uv pip install -r pyproject.toml
 ```sh
 uv run fastapi dev
 ```
+
+## Run in Docker
+
+```sh
+docker-compose up
+```
